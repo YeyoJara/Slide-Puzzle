@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1yiycau2snp1"]
+
+[ext_resource type="Script" path="res://Fichas/ficha.gd" id="1_pfxup"]
+[ext_resource type="Texture2D" uid="uid://ci8v0hbxpiohr" path="res://Fichas/Puzzle_Sprite_Sheet.png" id="2_3v68t"]
+[ext_resource type="PackedScene" uid="uid://conx26sc2u7yo" path="res://Fichas/detectar_fichas.tscn" id="2_abkdp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f46rt"]
+size = Vector2(25, 25)
+
+[node name="Ficha" type="CharacterBody2D"]
+collision_mask = 0
+script = ExtResource("1_pfxup")
+
+[node name="Ficha" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_3v68t")
+hframes = 25
+
+[node name="Colision" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("RectangleShape2D_f46rt")
+debug_color = Color(1, 0.180392, 0.231373, 0.419608)
+
+[node name="Ficha_Arriba" parent="." instance=ExtResource("2_abkdp")]
+visible = false
+collision_layer = 2
+collision_mask = 1
+
+[node name="Detectar" parent="Ficha_Arriba" index="0"]
+position = Vector2(0, 22)
+
+[node name="Ficha_Abajo" parent="." instance=ExtResource("2_abkdp")]
+visible = false
+collision_layer = 2
+collision_mask = 1
+
+[node name="Detectar" parent="Ficha_Abajo" index="0"]
+position = Vector2(0, -22)
+
+[node name="Ficha_Derecha" parent="." instance=ExtResource("2_abkdp")]
+visible = false
+collision_layer = 2
+collision_mask = 1
+
+[node name="Detectar" parent="Ficha_Derecha" index="0"]
+position = Vector2(22, 0)
+
+[node name="Ficha_Izquierda" parent="." instance=ExtResource("2_abkdp")]
+visible = false
+collision_layer = 2
+collision_mask = 1
+
+[node name="Detectar" parent="Ficha_Izquierda" index="0"]
+position = Vector2(-22, 0)
+
+[editable path="Ficha_Arriba"]
+[editable path="Ficha_Abajo"]
+[editable path="Ficha_Derecha"]
+[editable path="Ficha_Izquierda"]

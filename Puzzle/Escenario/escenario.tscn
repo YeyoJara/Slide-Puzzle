@@ -1,0 +1,388 @@
+[gd_scene load_steps=14 format=3 uid="uid://dil0t8igk35fd"]
+
+[ext_resource type="Texture2D" uid="uid://dy4n7r01gcbd1" path="res://Escenario/Escenario.png" id="1_5j22s"]
+[ext_resource type="Script" path="res://Escenario/escenario.gd" id="1_m3x4v"]
+[ext_resource type="PackedScene" uid="uid://d1yiycau2snp1" path="res://Fichas/ficha.tscn" id="2_p5a5y"]
+[ext_resource type="Texture2D" uid="uid://cmb1fg50e057" path="res://Escenario/Mix_button.png" id="4_rlxdx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nr0vd"]
+bg_color = Color(0.784314, 0.784314, 0.784314, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2m2qh"]
+size = Vector2(320, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r4mrm"]
+size = Vector2(321, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_es3wn"]
+size = Vector2(70, 180)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5g5uf"]
+size = Vector2(70, 181)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gvmkf"]
+texture = ExtResource("4_rlxdx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4p5cg"]
+texture = ExtResource("4_rlxdx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ur0ih"]
+texture = ExtResource("4_rlxdx")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u0xju"]
+texture = ExtResource("4_rlxdx")
+modulate_color = Color(0.592157, 0.592157, 0.592157, 1)
+
+[node name="Escenario" type="Node2D"]
+script = ExtResource("1_m3x4v")
+metadata/_edit_horizontal_guides_ = [-34.0, 180.0, 200.0]
+metadata/_edit_vertical_guides_ = [250.0, 90.0]
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 320.0
+offset_bottom = 180.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_nr0vd")
+metadata/_edit_use_anchors_ = true
+
+[node name="Fondo" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_5j22s")
+metadata/_edit_use_anchors_ = true
+
+[node name="Fichas" type="Node2D" parent="."]
+
+[node name="Ficha_1" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(124, 18)
+
+[node name="Ficha" parent="Fichas/Ficha_1" index="0"]
+frame = 1
+
+[node name="Ficha_2" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(160, 18)
+
+[node name="Ficha" parent="Fichas/Ficha_2" index="0"]
+frame = 2
+
+[node name="Ficha_3" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(196, 18)
+
+[node name="Ficha" parent="Fichas/Ficha_3" index="0"]
+frame = 3
+
+[node name="Ficha_4" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(232, 18)
+
+[node name="Ficha" parent="Fichas/Ficha_4" index="0"]
+frame = 4
+
+[node name="Ficha_5" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(88, 54)
+
+[node name="Ficha" parent="Fichas/Ficha_5" index="0"]
+frame = 5
+
+[node name="Ficha_6" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(124, 54)
+
+[node name="Ficha" parent="Fichas/Ficha_6" index="0"]
+frame = 6
+
+[node name="Ficha_7" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(160, 54)
+
+[node name="Ficha" parent="Fichas/Ficha_7" index="0"]
+frame = 7
+
+[node name="Ficha_8" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(196, 54)
+
+[node name="Ficha" parent="Fichas/Ficha_8" index="0"]
+frame = 8
+
+[node name="Ficha_9" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(232, 54)
+
+[node name="Ficha" parent="Fichas/Ficha_9" index="0"]
+frame = 9
+
+[node name="Ficha_10" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(88, 90)
+
+[node name="Ficha" parent="Fichas/Ficha_10" index="0"]
+frame = 10
+
+[node name="Ficha_11" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(124, 90)
+
+[node name="Ficha" parent="Fichas/Ficha_11" index="0"]
+frame = 11
+
+[node name="Ficha_12" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(160, 90)
+
+[node name="Ficha" parent="Fichas/Ficha_12" index="0"]
+frame = 12
+
+[node name="Ficha_13" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(196, 90)
+
+[node name="Ficha" parent="Fichas/Ficha_13" index="0"]
+frame = 13
+
+[node name="Ficha_14" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(232, 90)
+
+[node name="Ficha" parent="Fichas/Ficha_14" index="0"]
+frame = 14
+
+[node name="Ficha_15" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(88, 126)
+
+[node name="Ficha" parent="Fichas/Ficha_15" index="0"]
+frame = 15
+
+[node name="Ficha_16" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(124, 126)
+
+[node name="Ficha" parent="Fichas/Ficha_16" index="0"]
+frame = 16
+
+[node name="Ficha_17" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(160, 126)
+
+[node name="Ficha" parent="Fichas/Ficha_17" index="0"]
+frame = 17
+
+[node name="Ficha_18" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(196, 126)
+
+[node name="Ficha" parent="Fichas/Ficha_18" index="0"]
+frame = 18
+
+[node name="Ficha_19" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(232, 126)
+
+[node name="Ficha" parent="Fichas/Ficha_19" index="0"]
+frame = 19
+
+[node name="Ficha_20" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(88, 162)
+
+[node name="Ficha" parent="Fichas/Ficha_20" index="0"]
+frame = 20
+
+[node name="Ficha_21" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(124, 162)
+
+[node name="Ficha" parent="Fichas/Ficha_21" index="0"]
+frame = 21
+
+[node name="Ficha_22" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(160, 162)
+
+[node name="Ficha" parent="Fichas/Ficha_22" index="0"]
+frame = 22
+
+[node name="Ficha_23" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(196, 162)
+
+[node name="Ficha" parent="Fichas/Ficha_23" index="0"]
+frame = 23
+
+[node name="Ficha_24" parent="Fichas" instance=ExtResource("2_p5a5y")]
+position = Vector2(232, 162)
+
+[node name="Ficha" parent="Fichas/Ficha_24" index="0"]
+frame = 24
+
+[node name="Limites" type="StaticBody2D" parent="."]
+collision_mask = 0
+
+[node name="Arriba" type="CollisionShape2D" parent="Limites"]
+position = Vector2(160, -10)
+shape = SubResource("RectangleShape2D_2m2qh")
+
+[node name="Abajo" type="CollisionShape2D" parent="Limites"]
+position = Vector2(160.5, 190)
+shape = SubResource("RectangleShape2D_r4mrm")
+
+[node name="Derecha" type="CollisionShape2D" parent="Limites"]
+position = Vector2(285, 90)
+shape = SubResource("RectangleShape2D_es3wn")
+
+[node name="Izquierda" type="CollisionShape2D" parent="Limites"]
+position = Vector2(35, 90.5)
+shape = SubResource("RectangleShape2D_5g5uf")
+
+[node name="Mezclador" type="Button" parent="."]
+texture_filter = 1
+offset_left = 264.0
+offset_top = 138.0
+offset_right = 308.0
+offset_bottom = 168.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_gvmkf")
+theme_override_styles/hover = SubResource("StyleBoxTexture_4p5cg")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ur0ih")
+theme_override_styles/focus = SubResource("StyleBoxTexture_u0xju")
+
+[node name="Cronometro" type="Timer" parent="."]
+
+[node name="Tiempo_Pantalla" type="Label" parent="Cronometro"]
+offset_left = 255.0
+offset_top = 9.0
+offset_right = 314.0
+offset_bottom = 32.0
+horizontal_alignment = 1
+
+[node name="Cronometro" type="Timer" parent="Cronometro"]
+
+[node name="Controles" type="Label" parent="."]
+offset_left = 15.0
+offset_top = 76.0
+offset_right = 55.0
+offset_bottom = 99.0
+
+[node name="Controles" type="Label" parent="Controles"]
+layout_mode = 0
+offset_left = -24.0
+offset_top = -51.0
+offset_right = 61.0
+offset_bottom = 27.0
+theme_override_font_sizes/font_size = 12
+text = "Controles:
+Flechas
+del teclado"
+horizontal_alignment = 1
+
+[node name="Flechas" type="Label" parent="Controles"]
+layout_mode = 0
+offset_top = 19.0
+offset_right = 40.0
+offset_bottom = 71.0
+text = " ↑  ↓
+→ ←"
+
+[connection signal="pressed" from="Mezclador" to="." method="_on_mezclador_pressed"]
+[connection signal="timeout" from="Cronometro/Cronometro" to="." method="_on_cronometro_timeout"]
+
+[editable path="Fichas/Ficha_1"]
+[editable path="Fichas/Ficha_1/Ficha_Arriba"]
+[editable path="Fichas/Ficha_1/Ficha_Abajo"]
+[editable path="Fichas/Ficha_1/Ficha_Derecha"]
+[editable path="Fichas/Ficha_1/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_2"]
+[editable path="Fichas/Ficha_2/Ficha_Arriba"]
+[editable path="Fichas/Ficha_2/Ficha_Abajo"]
+[editable path="Fichas/Ficha_2/Ficha_Derecha"]
+[editable path="Fichas/Ficha_2/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_3"]
+[editable path="Fichas/Ficha_3/Ficha_Arriba"]
+[editable path="Fichas/Ficha_3/Ficha_Abajo"]
+[editable path="Fichas/Ficha_3/Ficha_Derecha"]
+[editable path="Fichas/Ficha_3/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_4"]
+[editable path="Fichas/Ficha_4/Ficha_Arriba"]
+[editable path="Fichas/Ficha_4/Ficha_Abajo"]
+[editable path="Fichas/Ficha_4/Ficha_Derecha"]
+[editable path="Fichas/Ficha_4/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_5"]
+[editable path="Fichas/Ficha_5/Ficha_Arriba"]
+[editable path="Fichas/Ficha_5/Ficha_Abajo"]
+[editable path="Fichas/Ficha_5/Ficha_Derecha"]
+[editable path="Fichas/Ficha_5/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_6"]
+[editable path="Fichas/Ficha_6/Ficha_Arriba"]
+[editable path="Fichas/Ficha_6/Ficha_Abajo"]
+[editable path="Fichas/Ficha_6/Ficha_Derecha"]
+[editable path="Fichas/Ficha_6/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_7"]
+[editable path="Fichas/Ficha_7/Ficha_Arriba"]
+[editable path="Fichas/Ficha_7/Ficha_Abajo"]
+[editable path="Fichas/Ficha_7/Ficha_Derecha"]
+[editable path="Fichas/Ficha_7/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_8"]
+[editable path="Fichas/Ficha_8/Ficha_Arriba"]
+[editable path="Fichas/Ficha_8/Ficha_Abajo"]
+[editable path="Fichas/Ficha_8/Ficha_Derecha"]
+[editable path="Fichas/Ficha_8/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_9"]
+[editable path="Fichas/Ficha_9/Ficha_Arriba"]
+[editable path="Fichas/Ficha_9/Ficha_Abajo"]
+[editable path="Fichas/Ficha_9/Ficha_Derecha"]
+[editable path="Fichas/Ficha_9/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_10"]
+[editable path="Fichas/Ficha_10/Ficha_Arriba"]
+[editable path="Fichas/Ficha_10/Ficha_Abajo"]
+[editable path="Fichas/Ficha_10/Ficha_Derecha"]
+[editable path="Fichas/Ficha_10/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_11"]
+[editable path="Fichas/Ficha_11/Ficha_Arriba"]
+[editable path="Fichas/Ficha_11/Ficha_Abajo"]
+[editable path="Fichas/Ficha_11/Ficha_Derecha"]
+[editable path="Fichas/Ficha_11/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_12"]
+[editable path="Fichas/Ficha_12/Ficha_Arriba"]
+[editable path="Fichas/Ficha_12/Ficha_Abajo"]
+[editable path="Fichas/Ficha_12/Ficha_Derecha"]
+[editable path="Fichas/Ficha_12/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_13"]
+[editable path="Fichas/Ficha_13/Ficha_Arriba"]
+[editable path="Fichas/Ficha_13/Ficha_Abajo"]
+[editable path="Fichas/Ficha_13/Ficha_Derecha"]
+[editable path="Fichas/Ficha_13/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_14"]
+[editable path="Fichas/Ficha_14/Ficha_Arriba"]
+[editable path="Fichas/Ficha_14/Ficha_Abajo"]
+[editable path="Fichas/Ficha_14/Ficha_Derecha"]
+[editable path="Fichas/Ficha_14/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_15"]
+[editable path="Fichas/Ficha_15/Ficha_Arriba"]
+[editable path="Fichas/Ficha_15/Ficha_Abajo"]
+[editable path="Fichas/Ficha_15/Ficha_Derecha"]
+[editable path="Fichas/Ficha_15/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_16"]
+[editable path="Fichas/Ficha_16/Ficha_Arriba"]
+[editable path="Fichas/Ficha_16/Ficha_Abajo"]
+[editable path="Fichas/Ficha_16/Ficha_Derecha"]
+[editable path="Fichas/Ficha_16/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_17"]
+[editable path="Fichas/Ficha_17/Ficha_Arriba"]
+[editable path="Fichas/Ficha_17/Ficha_Abajo"]
+[editable path="Fichas/Ficha_17/Ficha_Derecha"]
+[editable path="Fichas/Ficha_17/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_18"]
+[editable path="Fichas/Ficha_18/Ficha_Arriba"]
+[editable path="Fichas/Ficha_18/Ficha_Abajo"]
+[editable path="Fichas/Ficha_18/Ficha_Derecha"]
+[editable path="Fichas/Ficha_18/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_19"]
+[editable path="Fichas/Ficha_19/Ficha_Arriba"]
+[editable path="Fichas/Ficha_19/Ficha_Abajo"]
+[editable path="Fichas/Ficha_19/Ficha_Derecha"]
+[editable path="Fichas/Ficha_19/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_20"]
+[editable path="Fichas/Ficha_20/Ficha_Arriba"]
+[editable path="Fichas/Ficha_20/Ficha_Abajo"]
+[editable path="Fichas/Ficha_20/Ficha_Derecha"]
+[editable path="Fichas/Ficha_20/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_21"]
+[editable path="Fichas/Ficha_21/Ficha_Arriba"]
+[editable path="Fichas/Ficha_21/Ficha_Abajo"]
+[editable path="Fichas/Ficha_21/Ficha_Derecha"]
+[editable path="Fichas/Ficha_21/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_22"]
+[editable path="Fichas/Ficha_22/Ficha_Arriba"]
+[editable path="Fichas/Ficha_22/Ficha_Abajo"]
+[editable path="Fichas/Ficha_22/Ficha_Derecha"]
+[editable path="Fichas/Ficha_22/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_23"]
+[editable path="Fichas/Ficha_23/Ficha_Arriba"]
+[editable path="Fichas/Ficha_23/Ficha_Abajo"]
+[editable path="Fichas/Ficha_23/Ficha_Derecha"]
+[editable path="Fichas/Ficha_23/Ficha_Izquierda"]
+[editable path="Fichas/Ficha_24"]
+[editable path="Fichas/Ficha_24/Ficha_Arriba"]
+[editable path="Fichas/Ficha_24/Ficha_Abajo"]
+[editable path="Fichas/Ficha_24/Ficha_Derecha"]
+[editable path="Fichas/Ficha_24/Ficha_Izquierda"]
